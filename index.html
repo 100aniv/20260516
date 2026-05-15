@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5.16 대학로 연극 데이 🎭</title>
+  <meta name="description" content="5월 16일 대학로 연극 데이 일정 브리핑">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="top-header">
+  <div class="container">
+    <span class="header__logo">5.16 🎭</span>
+    <span class="header__date">2026.05.16 (토)</span>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__emoji">🎭</div>
+    <p class="hero__date">2026. 05. 16 Saturday</p>
+    <h1 class="hero__title">대학로 연극 데이</h1>
+    <p class="hero__subtitle">북촌 카페부터 대학로 연극,<br>그리고 알찬 코스까지 쭉 정리해봤어요 📋</p>
+    <div class="hero__scroll"><span>↓</span></div>
+  </div>
+</section>
+
+<!-- 전체 일정 브리핑 -->
+<section class="detail-section" id="overview">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-header__icon">📋</div>
+      <h2 class="section-header__title">전체 일정 브리핑</h2>
+      <p class="section-header__sub">이렇게 흘러갈 예정!</p>
+    </div>
+    <div class="timeline fade-up" id="timeline-container"></div>
+  </div>
+</section>
+
+<!-- 1. 카페 -->
+<section class="detail-section" id="cafe">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-number section-number--cafe">1</div>
+      <h2 class="section-header__title">☕ 카페</h2>
+      <p class="section-header__sub">여유로운 오후의 시작</p>
+    </div>
+    <div id="cafe-card"></div>
+  </div>
+</section>
+
+<!-- 2. 연극 -->
+<section class="detail-section" id="theater">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-number section-number--theater">2</div>
+      <h2 class="section-header__title">🎭 연극</h2>
+      <p class="section-header__sub">대학로에서 즐기는 문화 데이</p>
+    </div>
+    <div id="theater-card"></div>
+  </div>
+</section>
+
+<!-- 3. 사주/신점/철학관 -->
+<section class="detail-section" id="fortune">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-number section-number--fortune">3</div>
+      <h2 class="section-header__title">🔮 사주 · 신점 · 철학관</h2>
+      <p class="section-header__sub">특별한 경험, 어디서 해볼까?</p>
+    </div>
+    <div class="notice-box fade-up">
+      <span class="notice-box__icon">💡</span>
+      <span class="notice-box__text">단순 사주가 아닌 신점이나 철학관 쪽도 준비했고, 가벼운 타로 카페 옵션도 함께!</span>
+    </div>
+    <div class="tabs fade-up" data-section="fortune">
+      <button class="tab-btn active" data-tab="daehakro">📍 대학로</button>
+      <button class="tab-btn" data-tab="other">📍 대학로 이외</button>
+    </div>
+    <div class="tab-content active" data-section="fortune" data-tab="daehakro" id="fortune-daehakro"></div>
+    <div class="tab-content" data-section="fortune" data-tab="other" id="fortune-other"></div>
+  </div>
+</section>
+
+<!-- 4. 식사 -->
+<section class="detail-section" id="dining">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-number section-number--dining">4</div>
+      <h2 class="section-header__title">🍽️ 식사</h2>
+      <p class="section-header__sub">3번 일정에 따라 달라지는 저녁</p>
+    </div>
+    <div class="tabs fade-up" data-section="dining">
+      <button class="tab-btn active" data-tab="daehakro">📍 대학로</button>
+      <button class="tab-btn" data-tab="other">📍 종로 · 을지로</button>
+    </div>
+    <div class="tab-content active" data-section="dining" data-tab="daehakro" id="dining-daehakro"></div>
+    <div class="tab-content" data-section="dining" data-tab="other" id="dining-other"></div>
+  </div>
+</section>
+
+<!-- 5. 동선 시나리오 -->
+<section class="detail-section" id="routes">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-number section-number--route">5</div>
+      <h2 class="section-header__title">🗺️ 전체 동선 시나리오</h2>
+      <p class="section-header__sub">케이스별 정리</p>
+    </div>
+    <div id="scenarios-container"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__emoji">🎭</div>
+    <p class="footer__text">재밌는 하루 보내자! 🙌</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
